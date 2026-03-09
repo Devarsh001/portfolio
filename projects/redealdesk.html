@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Case study: Design and development of a structured educational platform for ReDealDesk.">
+    <meta property="og:title" content="Devarsh Soni — Case Study">
+    <meta property="og:description"
+        content="Professional web designer and frontend developer specializing in responsive layouts and clear architecture.">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>ReDealDesk Case Study — Devarsh Soni</title>
+
+    <link href="../css/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-brand-bg text-brand-text antialiased">
+
+    <header class="border-b border-brand-border relative z-40 sticky top-0 bg-brand-bg/90 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+            <h1>
+                <a href="../index.html"
+                    class="text-2xl md:text-3xl font-semibold leading-tight mb-6 max-w-4xl">Devarsh</a>
+            </h1>
+
+            <!-- Desktop nav -->
+            <nav class="hidden md:flex space-x-8 text-sm text-gray-600">
+                <a href="../work.html" class="hover:text-brand-text transition-colors">Work</a>
+                <a href="../about.html" class="hover:text-brand-text transition-colors">About</a>
+                <a href="../contact.html" class="hover:text-brand-text transition-colors">Contact</a>
+            </nav>
+
+            <a href="../contact.html"
+                class="hidden md:inline-block border border-brand-border px-4 py-2 rounded-lg text-sm hover:border-brand-accent hover:text-brand-accent transition-colors">
+                Let's Talk
+            </a>
+
+            <!-- Hamburger (mobile only) -->
+            <button id="menu-toggle" class="md:hidden flex items-center justify-center w-8 h-8 -mr-1"
+                aria-label="Open menu">
+                <svg id="icon-open" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round">
+                    <line x1="2" y1="5" x2="18" y2="5" />
+                    <line x1="2" y1="10" x2="18" y2="10" />
+                    <line x1="2" y1="15" x2="18" y2="15" />
+                </svg>
+                <svg id="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" class="hidden">
+                    <line x1="4" y1="4" x2="16" y2="16" />
+                    <line x1="16" y1="4" x2="4" y2="16" />
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Full-page mobile menu overlay -->
+    <div id="mobile-overlay" class="md:hidden fixed inset-0 z-50 bg-brand-bg
+            -translate-y-full transition-transform duration-[450ms] ease-[cubic-bezier(0.4,0,0.2,1)]">
+
+        <div class="px-6 py-5 flex items-center justify-between border-b border-brand-border">
+            <a href="index.html" class="text-lg font-semibold">Devarsh</a>
+            <button id="menu-close" class="flex items-center justify-center w-8 h-8 -mr-1" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round">
+                    <line x1="4" y1="4" x2="16" y2="16" />
+                    <line x1="16" y1="4" x2="4" y2="16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Nav links -->
+        <nav class="flex flex-col px-6 pt-16 gap-8">
+            <a href="work.html"
+                class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">Work</a>
+            <a href="about.html"
+                class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">About</a>
+            <a href="contact.html"
+                class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">Contact</a>
+            <a href="../contact.html"
+                class="self-start border border-brand-border px-5 py-3 rounded-lg text-sm hover:border-brand-accent hover:text-brand-accent mt-4 opacity-0 translate-y-3 transition-[opacity,transform] duration-300">Resume</a>
+        </nav>
+
+    </div>
+
+    <section class="py-16 md:py-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <p class="text-sm text-gray-500 mb-4">
+                Case Study
+            </p>
+
+            <h1 class="text-4xl md:text-5xl font-semibold mb-6">
+                ReDealDesk
+                Educational Platform
+            </h1>
+
+            <p class="text-lg text-brand-text/80 mb-10">
+                End-to-end design and development of a structured educational platform
+                presenting commercial real estate decision frameworks in a clear,
+                navigable format.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-sm text-brand-text/70">
+
+                <div>
+                    <p class="font-medium text-brand-text mb-1">Role</p>
+                    <p>End-to-End Website Designer</p>
+                </div>
+
+                <div>
+                    <p class="font-medium text-brand-text mb-1">Platform</p>
+                    <p>Custom HTML & CSS</p>
+                </div>
+
+                <div>
+                    <p class="font-medium text-brand-text mb-1">Scope</p>
+                    <p>Educational Platform</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pb-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+            <img src="../assets/images/redealdesk/redealdesk-thumb.png" alt="ReDealDesk Platform Overview"
+                class="rounded-xl border w-full">
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24 border-t border-brand-border bg-white/30">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-6">
+                Project Overview
+            </h2>
+
+            <p class="text-brand-text/80 leading-relaxed mb-6">
+
+                ReDealDesk is an educational platform focused on commercial real estate
+                decision-making. The platform needed to present structured frameworks
+                and learning content in a way that was easy to navigate and digest.
+
+                The challenge was to design a platform that could present dense,
+                information-heavy content clearly without overwhelming the user,
+                while maintaining a consistent visual structure across all sections.
+
+                The end result is a well-organised educational interface that guides
+                users through real estate concepts in a logical, structured sequence.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-6">
+                The Problem
+            </h2>
+
+            <ul class="space-y-4 text-brand-text/80">
+
+                <li>• Complex educational content without a clear presentation structure</li>
+                <li>• No consistent layout system to organise frameworks and modules</li>
+                <li>• Difficulty navigating between related content sections</li>
+                <li>• Content hierarchy needed to guide users through structured learning paths</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24 border-t border-brand-border bg-white/30">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-6">
+                My Role
+            </h2>
+
+            <p class="text-brand-text/80 leading-relaxed">
+
+                I was responsible for the complete design and development of the platform,
+                from content structuring and layout planning through to the final
+                production build.
+
+                This included defining how complex real estate frameworks would be
+                presented visually, designing the full page system in Figma,
+                and building the responsive frontend to match the approved designs.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24 border-t border-brand-border bg-white/30">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-10">
+                Design System Thinking
+            </h2>
+
+            <p class="text-lg text-brand-text/80 leading-relaxed max-w-3xl">
+
+                Educational platforms carry a high volume of content, making a
+                consistent design system critical to usability.
+
+                Repeatable content modules, consistent section spacing, and
+                a clear typographic hierarchy were established early in the
+                process to ensure the platform remained organised and
+                scannable as content scaled.
+
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div
+                    class="border border-brand-border bg-white/50 rounded-xl p-6 hover:border-brand-accent transition-colors">
+                    <h3 class="font-semibold mb-2">Layout Structure</h3>
+                    <p class="text-sm text-brand-text/70">
+                        Content modules were built on a consistent grid structure
+                        to create a predictable, easy-to-follow reading experience
+                        across all framework sections.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-brand-border bg-white/50 rounded-xl p-6 hover:border-brand-accent transition-colors">
+                    <h3 class="font-semibold mb-2">Spacing System</h3>
+                    <p class="text-sm text-brand-text/70">
+                        A standardised spacing scale was applied throughout
+                        to maintain visual breathing room between dense
+                        content blocks.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-brand-border bg-white/50 rounded-xl p-6 hover:border-brand-accent transition-colors">
+                    <h3 class="font-semibold mb-2">Reusable Components</h3>
+                    <p class="text-sm text-brand-text/70">
+                        Framework cards, section headers, and highlight blocks
+                        were designed as reusable components to support
+                        efficient content scaling.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-6">
+                Design Approach
+            </h2>
+
+            <p class="text-brand-text/80 leading-relaxed mb-6">
+
+                The design prioritised clarity and structure above aesthetics.
+                Educational content benefits most from clean layouts, strong
+                typographic hierarchy, and clear visual separation between sections.
+
+                Each framework module was presented using a consistent content
+                pattern, allowing users to build familiarity with the layout
+                and focus their attention on the information rather than
+                navigating the interface.
+
+                Responsive behaviour was a core consideration, ensuring the platform
+                remained fully usable on both desktop and mobile screen sizes.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24 border-t border-brand-border bg-white/30">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-12">
+                Figma Design vs Elementor Build
+            </h2>
+
+            <div id="image-slider"
+                data-before='["../assets/images/redealdesk/redealdesk-home-figma.png", "../assets/images/redealdesk/redealdesk-about-figma.png", "../assets/images/redealdesk/redealdesk-contact-figma.png", "../assets/images/redealdesk/redealdesk-cources-figma.png"]'
+                data-after='["../assets/images/redealdesk/redealdesk-home-design.png", "../assets/images/redealdesk/redealdesk-about-design.png", "../assets/images/redealdesk/redealdesk-contact-design.png", "../assets/images/redealdesk/redealdesk-cources-design.png"]'>
+
+                <div class="grid md:grid-cols-2 gap-10 items-start mb-10">
+
+                    <!-- BEFORE -->
+                    <div>
+
+                        <p class="text-sm text-gray-500 mb-3">
+                            Figma Design
+                        </p>
+
+                        <div class="relative overflow-hidden rounded-xl border bg-white">
+
+                            <img loading="lazy" id="beforeImage"
+                                src="../assets/images/redealdesk/redealdesk-home-figma.png"
+                                alt="ReDealDesk Figma Design"
+                                class="w-full transition-opacity duration-300 opacity-100" />
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AFTER -->
+                    <div>
+
+                        <p class="text-sm text-gray-500 mb-3">
+                            Elementor Build
+                        </p>
+
+                        <div class="relative overflow-hidden rounded-xl border bg-white">
+
+                            <img loading="lazy" id="afterImage"
+                                src="../assets/images/redealdesk/redealdesk-home-design.png"
+                                alt="ReDealDesk Elementor Build"
+                                class="w-full transition-opacity duration-300 opacity-100" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="flex items-center justify-center gap-6">
+
+                    <button id="prevBtn"
+                        class="border border-gray-300 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition flex items-center">
+                        <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 12H6M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>&nbsp;Prev
+                    </button>
+
+                    <p id="slideCounter" class="text-sm text-gray-500 w-10 text-center">
+                        1 / 4
+                    </p>
+
+                    <button id="nextBtn"
+                        class="border border-gray-300 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 transition flex items-center">
+                        Next&nbsp;
+                        <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 md:py-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-3xl font-semibold mb-6">
+                Outcome
+            </h2>
+
+            <ul class="space-y-4 text-brand-text/80">
+
+                <li>• Complex real estate frameworks presented in a clear, structured format</li>
+                <li>• Consistent page layouts maintained across all content sections</li>
+                <li>• Improved content navigability through reusable layout patterns</li>
+                <li>• Fully responsive platform across desktop and mobile devices</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Next Project -->
+    <section class="py-16 bg-brand-text text-brand-bg text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-brand-bg/70 text-sm font-medium uppercase tracking-wider mb-4">Next Project</p>
+            <a href="enim.html" class="group inline-flex flex-col items-center">
+                <h2
+                    class="text-4xl md:text-5xl font-display font-semibold mb-4 group-hover:text-brand-accent transition-colors">
+                    Enim Apparel</h2>
+                <div
+                    class="w-12 h-12 rounded-full border border-brand-bg/30 flex items-center justify-center group-hover:border-brand-accent group-hover:bg-brand-accent/10 transition-colors">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        class="text-brand-bg group-hover:text-brand-accent transition-colors" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="border-t border-brand-border py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between text-sm text-brand-text/60">
+            <p>© 2026 Devarsh Soni</p>
+            <div class="space-x-4">
+                <a href="https://www.linkedin.com/in/devarsh001/" target="_blank"
+                    class="hover:text-brand-text transition-colors">LinkedIn</a>
+                <a href="https://github.com/devarsh001" target="_blank" class="hover:text-brand-text transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 z-50 w-10 h-10 rounded-full border border-brand-border bg-brand-bg/90 backdrop-blur-md flex items-center justify-center shadow-sm hover:border-brand-accent hover:text-brand-accent transition-all duration-300 opacity-0 pointer-events-none"
+        aria-label="Back to top">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 13V3M3 8l5-5 5 5" />
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
