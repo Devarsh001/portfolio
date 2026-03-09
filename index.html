@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Devarsh Soni is a Web Designer and Frontend Developer focusing on designing and building high-quality, modern websites.">
+  <meta property="og:title" content="Devarsh Soni — Web Designer">
+  <meta property="og:description"
+    content="Professional web designer and frontend developer specializing in responsive layouts and clear architecture.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Devarsh Soni — Web Designer</title>
+
+  <link href="./css/output.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="bg-brand-bg text-brand-text antialiased">
+
+  <header class="border-b border-brand-border relative z-40 sticky top-0 bg-brand-bg/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+      <h1>
+        <a href="index.html" class="text-2xl md:text-3xl font-semibold leading-tight mb-6 max-w-4xl">Devarsh</a>
+      </h1>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex space-x-8 text-sm text-gray-600">
+        <a href="work.html" class="hover:text-brand-text transition-colors">Work</a>
+        <a href="about.html" class="hover:text-brand-text transition-colors">About</a>
+        <a href="contact.html" class="hover:text-brand-text transition-colors">Contact</a>
+      </nav>
+
+      <a href="contact.html"
+        class="hidden md:inline-block border border-brand-border px-4 py-2 rounded-lg text-sm hover:border-brand-accent hover:text-brand-accent transition-colors">
+        Let's Talk
+      </a>
+
+      <!-- Hamburger (mobile only) -->
+      <button id="menu-toggle" class="md:hidden flex items-center justify-center w-8 h-8 -mr-1" aria-label="Open menu">
+        <svg id="icon-open" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round">
+          <line x1="2" y1="5" x2="18" y2="5" />
+          <line x1="2" y1="10" x2="18" y2="10" />
+          <line x1="2" y1="15" x2="18" y2="15" />
+        </svg>
+        <svg id="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" class="hidden">
+          <line x1="4" y1="4" x2="16" y2="16" />
+          <line x1="16" y1="4" x2="4" y2="16" />
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Full-page mobile menu overlay -->
+  <div id="mobile-overlay" class="md:hidden fixed inset-0 z-50 bg-brand-bg
+            -translate-y-full transition-transform duration-[450ms] ease-[cubic-bezier(0.4,0,0.2,1)]">
+
+    <!-- Mirrors header bar -->
+    <div class="px-6 py-5 flex items-center justify-between border-b border-brand-border">
+      <a href="index.html" class="text-lg font-semibold">Devarsh</a>
+      <button id="menu-close" class="flex items-center justify-center w-8 h-8 -mr-1" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <line x1="4" y1="4" x2="16" y2="16" />
+          <line x1="16" y1="4" x2="4" y2="16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="flex flex-col px-6 pt-16 gap-8">
+      <a href="work.html"
+        class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">Work</a>
+      <a href="about.html"
+        class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">About</a>
+      <a href="contact.html"
+        class="text-lg font-semibold text-gray-900 hover:text-gray-400 transition-colors opacity-0  translate-y-3 transition-[opacity,transform] duration-300">Contact</a>
+      <a href="contact.html"
+        class="self-start border border-gray-300 px-5 py-3 rounded-lg text-sm hover:bg-gray-50 mt-4 opacity-0 translate-y-3 transition-[opacity,transform] duration-300">Let's
+        Talk</a>
+    </nav>
+
+  </div>
+
+  <section class="py-16 md:py-24">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <p class="text-sm text-brand-accent font-medium uppercase tracking-wider mb-4">
+        Web Designer & Frontend Developer
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-6 max-w-4xl">
+        Crafting digital experiences <br class="hidden md:block" />
+        that perform seamlessly.
+      </h1>
+
+      <p class="text-lg text-brand-text/80 max-w-2xl mb-8">
+        I bridge the gap between aesthetic design and robust frontend architecture, delivering scalable websites built
+        for the modern web.
+      </p>
+
+      <div class="flex gap-4">
+
+        <a href="#work"
+          class="bg-brand-text text-brand-bg px-6 py-3 rounded-lg text-sm hover:bg-brand-accent transition-colors">
+          View Work
+        </a>
+
+        <a href="#contact"
+          class="border border-brand-border px-6 py-3 rounded-lg text-sm hover:border-brand-accent hover:text-brand-accent transition-colors">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="work" class="py-16 md:py-24 border-t border-brand-border">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="mb-16">
+
+        <h2 class="text-3xl font-semibold mb-3">
+          Selected Work
+        </h2>
+
+        <p class="text-gray-600 max-w-2xl">
+          A selection of recent projects where I designed and built
+          modern responsive websites across corporate, personal branding,
+          educational and ecommerce domains.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Project 1 -->
+
+        <div
+          class="bg-white border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent transition-colors group cursor-pointer block"
+          onclick="window.location.href='projects/rainstream.html'">
+
+          <img loading="lazy" src="assets/images/rainstream/rainstream-thumb.png"
+            alt="Rainstream Case Study Banner" class="w-full object-cover">
+
+          <div class="p-6">
+
+            <p class="text-xs text-gray-500 mb-2">
+              Corporate Website Redesign
+            </p>
+
+            <h3 class="text-lg font-semibold mb-2">
+              Rainstream Technologies
+            </h3>
+
+            <p class="text-sm text-gray-600 mb-4">
+              Redesigned and structured the corporate website to improve service clarity,
+              information hierarchy, and responsive layout consistency.
+            </p>
+
+            <p class="text-xs text-gray-500 mb-4">
+              Role: Web Designer & Frontend Implementation
+            </p>
+
+            <a href="projects/rainstream.html"
+              class="border border-brand-border text-brand-text group-hover:border-brand-accent group-hover:text-brand-accent transition-colors text-sm font-medium flex items-center w-max p-2 rounded-xl">
+              View Case Study&nbsp;
+              <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div
+          class="bg-white border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent transition-colors group cursor-pointer block"
+          onclick="window.location.href='projects/ryanhlubb.html'">
+
+          <img loading="lazy" src="assets/images/ryanHlubb/ryan-hlubb-thumb.png" alt="Ryan Hlubb Website Preview"
+            class="w-full object-cover">
+
+          <div class="p-6">
+
+            <p class="text-xs text-gray-500 mb-2">
+              Personal Branding Website
+            </p>
+
+            <h3 class="text-lg font-semibold mb-2">
+              Ryan Hlubb
+            </h3>
+
+            <p class="text-sm text-gray-600 mb-4">
+              Designed and built a professional website for a commercial real
+              estate valuation expert.
+            </p>
+
+            <p class="text-xs text-gray-500 mb-4">
+              Role: Website Designer & Developer
+            </p>
+
+            <a href="projects/ryanhlubb.html"
+              class="border border-brand-border text-brand-text group-hover:border-brand-accent group-hover:text-brand-accent transition-colors text-sm font-medium flex items-center w-max p-2 rounded-xl">
+              View Case Study&nbsp;
+              <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div
+          class="bg-white border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent transition-colors group cursor-pointer block"
+          onclick="window.location.href='projects/redealdesk.html'">
+
+          <img loading="lazy" src="assets/images/redealdesk/redealdesk-thumb.png" alt="ReDealDesk Educational Platform Preview"
+            class="w-full object-cover">
+
+          <div class="p-6">
+
+            <p class="text-xs text-gray-500 mb-2">
+              Educational Platform
+            </p>
+
+            <h3 class="text-lg font-semibold mb-2">
+              ReDealDesk
+            </h3>
+
+            <p class="text-sm text-gray-600 mb-4">
+              Designed and developed a structured educational platform presenting
+              commercial real estate decision frameworks.
+            </p>
+
+            <p class="text-xs text-gray-500 mb-4">
+              Role: End-to-End Website Designer
+            </p>
+
+            <a href="projects/redealdesk.html"
+              class="border border-brand-border text-brand-text group-hover:border-brand-accent group-hover:text-brand-accent transition-colors text-sm font-medium flex items-center w-max p-2 rounded-xl">
+              View Case Study&nbsp;
+              <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Project 4 -->
+        <div
+          class="bg-white border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent transition-colors group cursor-pointer block"
+          onclick="window.location.href='projects/enim.html'">
+
+          <img loading="lazy" src="assets/images/enim/enim-thumb.png" alt="Enim Shopify Store Preview"
+            class="w-full object-cover">
+
+          <div class="p-6">
+
+            <p class="text-xs text-gray-500 mb-2">
+              Shopify Apparel Store
+            </p>
+
+            <h3 class="text-lg font-semibold mb-2">
+              Enim
+            </h3>
+
+            <p class="text-sm text-gray-600 mb-4">
+              Customized Shopify storefront UI and improved mobile shopping
+              experience.
+            </p>
+
+            <p class="text-xs text-gray-500 mb-4">
+              Role: Shopify Theme Customization
+            </p>
+
+            <a href="projects/enim.html"
+              class="border border-brand-border text-brand-text group-hover:border-brand-accent group-hover:text-brand-accent transition-colors text-sm font-medium flex items-center w-max p-2 rounded-xl">
+              View Case Study&nbsp;
+              <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-3xl font-semibold mb-10">
+        What I Do
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div>
+          <h3 class="font-semibold mb-2">Web Design</h3>
+          <p class="text-gray-600 text-sm">
+            Designing modern user interfaces in Figma with focus on clarity,
+            usability, and scalable layouts.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-2">Frontend Development</h3>
+          <p class="text-gray-600 text-sm">
+            Converting designs into responsive websites using
+            HTML, CSS, JavaScript and modern frameworks.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-2">Website Optimization</h3>
+          <p class="text-gray-600 text-sm">
+            Improving performance, UI consistency, and functionality
+            for production websites.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-16 md:py-24 border-t border-brand-border">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-3xl font-semibold mb-6">
+        About
+      </h2>
+
+      <p class="text-brand-text/80 text-lg leading-relaxed max-w-3xl mb-8">
+        I design in systems, not just pages. By prioritizing repeatable layout patterns and scalable components, I
+        ensure the websites I build remain cohesive and maintainable as your product evolves.
+      </p>
+
+      <a href="about.html"
+        class="border border-brand-border text-brand-text hover:border-brand-accent hover:text-brand-accent transition-colors text-sm font-medium flex items-center w-max p-2 rounded-xl">
+        Learn more&nbsp;
+        <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="h-full"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="py-16 md:py-24">
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-3xl md:text-4xl font-semibold mb-6">
+        Let's build something great together.
+      </h2>
+
+      <p class="text-gray-600 mb-8">
+        Open to freelance projects and collaboration.
+      </p>
+
+      <a href="mailto:devarshsoni001@gmail.com"
+        class="bg-brand-text text-brand-bg px-8 py-4 rounded-lg text-sm hover:bg-brand-accent transition-colors">
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer class="border-t border-brand-border py-10 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between text-sm text-brand-text/60">
+      <p>© 2026 Devarsh Soni</p>
+      <div class="space-x-4">
+        <a href="https://www.linkedin.com/in/devarsh001/" target="_blank" class="hover:text-brand-text transition-colors">LinkedIn</a>
+        <a href="https://github.com/devarsh001" target="_blank" class="hover:text-brand-text transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-8 right-8 z-50 w-10 h-10 rounded-full border border-brand-border bg-brand-bg/90 backdrop-blur-md flex items-center justify-center shadow-sm hover:border-brand-accent hover:text-brand-accent transition-all duration-300 opacity-0 pointer-events-none"
+    aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 13V3M3 8l5-5 5 5" />
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
